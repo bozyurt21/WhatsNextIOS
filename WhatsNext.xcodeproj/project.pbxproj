@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B1F829554340D695061352A6 /* Pods_WhatsNext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 442CC0872720B91754672557 /* Pods_WhatsNext.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1DED80E13083F62000D3F1A5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +31,27 @@
 		1DED80D13083F61E00D3F1A5 /* WhatsNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DED80E03083F62000D3F1A5 /* WhatsNextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsNextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DED80EA3083F62000D3F1A5 /* WhatsNextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatsNextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		442CC0872720B91754672557 /* Pods_WhatsNext.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsNext.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7BDD37DE23AA4B2CC8C1C8 /* Pods-WhatsNext.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsNext.debug.xcconfig"; path = "Target Support Files/Pods-WhatsNext/Pods-WhatsNext.debug.xcconfig"; sourceTree = "<group>"; };
+		E95B0C59A1381BEC654CA778 /* Pods-WhatsNext.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsNext.release.xcconfig"; path = "Target Support Files/Pods-WhatsNext/Pods-WhatsNext.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1D5A58EB3093D3BC0010BEEF /* Exceptions for "WhatsNext" folder in "WhatsNext" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1DED80D03083F61E00D3F1A5 /* WhatsNext */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1DED80D33083F61E00D3F1A5 /* WhatsNext */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1D5A58EB3093D3BC0010BEEF /* Exceptions for "WhatsNext" folder in "WhatsNext" target */,
+			);
 			path = WhatsNext;
 			sourceTree = "<group>";
 		};
@@ -52,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F829554340D695061352A6 /* Pods_WhatsNext.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +93,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075C93125A559CF34BEB7751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF7BDD37DE23AA4B2CC8C1C8 /* Pods-WhatsNext.debug.xcconfig */,
+				E95B0C59A1381BEC654CA778 /* Pods-WhatsNext.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		1DED80C83083F61E00D3F1A5 = {
 			isa = PBXGroup;
 			children = (
 				1DED80D33083F61E00D3F1A5 /* WhatsNext */,
 				1DED80E33083F62000D3F1A5 /* WhatsNextTests */,
 				1DED80ED3083F62000D3F1A5 /* WhatsNextUITests */,
+				1DED811A30852D7000D3F1A5 /* Frameworks */,
 				1DED80D23083F61E00D3F1A5 /* Products */,
+				075C93125A559CF34BEB7751 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +124,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1DED811A30852D7000D3F1A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				442CC0872720B91754672557 /* Pods_WhatsNext.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DED80F43083F62000D3F1A5 /* Build configuration list for PBXNativeTarget "WhatsNext" */;
 			buildPhases = (
+				C51139DD1FCAFB8B19CD46C1 /* [CP] Check Pods Manifest.lock */,
 				1DED80CD3083F61E00D3F1A5 /* Sources */,
 				1DED80CE3083F61E00D3F1A5 /* Frameworks */,
 				1DED80CF3083F61E00D3F1A5 /* Resources */,
+				BF6FDF47F26AA08D613AA032 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -111,8 +153,6 @@
 				1DED80D33083F61E00D3F1A5 /* WhatsNext */,
 			);
 			name = WhatsNext;
-			packageProductDependencies = (
-			);
 			productName = WhatsNext;
 			productReference = 1DED80D13083F61E00D3F1A5 /* WhatsNext.app */;
 			productType = "com.apple.product-type.application";
@@ -134,8 +174,6 @@
 				1DED80E33083F62000D3F1A5 /* WhatsNextTests */,
 			);
 			name = WhatsNextTests;
-			packageProductDependencies = (
-			);
 			productName = WhatsNextTests;
 			productReference = 1DED80E03083F62000D3F1A5 /* WhatsNextTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,8 +195,6 @@
 				1DED80ED3083F62000D3F1A5 /* WhatsNextUITests */,
 			);
 			name = WhatsNextUITests;
-			packageProductDependencies = (
-			);
 			productName = WhatsNextUITests;
 			productReference = 1DED80EA3083F62000D3F1A5 /* WhatsNextUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +266,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF6FDF47F26AA08D613AA032 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsNext/Pods-WhatsNext-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsNext/Pods-WhatsNext-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatsNext/Pods-WhatsNext-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51139DD1FCAFB8B19CD46C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatsNext-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1DED80CD3083F61E00D3F1A5 /* Sources */ = {
@@ -392,6 +474,7 @@
 		};
 		1DED80F53083F62000D3F1A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF7BDD37DE23AA4B2CC8C1C8 /* Pods-WhatsNext.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,7 +482,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CHT686FZ4J;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsNext/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -410,7 +495,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensu.WhatsNext.WhatsNext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppCorn.WhatsNext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -424,6 +509,7 @@
 		};
 		1DED80F63083F62000D3F1A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95B0C59A1381BEC654CA778 /* Pods-WhatsNext.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,7 +517,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CHT686FZ4J;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WhatsNext/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -442,7 +530,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.bensu.WhatsNext.WhatsNext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AppCorn.WhatsNext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
